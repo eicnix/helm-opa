@@ -2,17 +2,21 @@
 [![CircleCI](https://circleci.com/gh/eicnix/helm-opa.svg?style=svg)](https://circleci.com/gh/eicnix/helm-opa)
 
 This plugin enables you to check your rendered templates files again OPA policies to ensure that they match your policies.
-<a href="hhttps://asciinema.org/a/179963" target="_blank"><img src="https://asciinema.org/a/179963" width="589"/></a>
 
-yaml```
+<a href="https://asciinema.org/a/179963" target="_blank"><img src="https://asciinema.org/a/179963.png" /></a>
+
+```sh
 helm opa CHART
 ```
 
 ## Install
 
+```sh
 $ helm plugin install https://github.com/eicnix/helm-opa
+```
 
 ## License
+
 Copyright [2018] [Lukas Eichler]
 
 Licensed under the Apache License, Version 2.0 (the "License");
