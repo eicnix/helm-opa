@@ -1,5 +1,6 @@
 debug*
 helm-opa*
-opa
+opa*
+_dist
 .vscode
 vendor

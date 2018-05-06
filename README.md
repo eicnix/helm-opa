@@ -17,7 +17,7 @@ $ helm plugin install https://github.com/eicnix/helm-opa
 
 ## License
 
-Copyright [2018] [Lukas Eichler]
+Copyright 2018 Lukas Eichler
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
