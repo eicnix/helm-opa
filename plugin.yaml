@@ -1,0 +1,9 @@
+name: "opa"
+# Version is the version of Helm plus the number of official builds for this
+# plugin
+version: "2.5.1+2"
+usage: "opa <path to chart>"
+description: "Checks rendered charts against OPA policies"
+command: "$HELM_PLUGIN_DIR/opa"
+hooks:
+  install: "$HELM_PLUGIN_DIR/install-binary.sh"

@@ -103,9 +103,9 @@ func run(cmd *cobra.Command, args []string) error {
 
 	fmt.Println("===")
 	if foundViolations {
-		fmt.Println("Result: Chart is compliant")
-	} else {
 		fmt.Println("Result: Chart is not compliant")
+	} else {
+		fmt.Println("Result: Chart is compliant")
 	}
 
 	return nil

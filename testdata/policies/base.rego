@@ -9,6 +9,7 @@ deny[msg] {
 
 deny[msg] {
   input.kind = "Deployment"
-  input.spec.selectors.matchLabels.app = null
+  not input.spec.selector.matchLabels.app
+  not input.spec.selector.matchLabels.release
   msg = "Containers must provide app/release labls for pod selectors"
 }
