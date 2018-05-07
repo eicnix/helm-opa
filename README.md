@@ -1,7 +1,7 @@
-# Helm OPA Plugin
+# Helm  [OPA](https://www.openpolicyagent.org/) Plugin
 [![CircleCI](https://circleci.com/gh/eicnix/helm-opa.svg?style=svg)](https://circleci.com/gh/eicnix/helm-opa)
 
-This plugin enables you to check your rendered templates files again OPA policies to ensure that they match your policies.
+This plugin enables you to check your rendered templates files again [Open Policy Agent](https://www.openpolicyagent.org/) policies to ensure that they match your policies.
 
 <a href="https://asciinema.org/a/180130" target="_blank"><img src="https://asciinema.org/a/180130.png" /></a>
 
@@ -25,7 +25,7 @@ Violations:
 Processing file ingress.yaml
 Processing file service.yaml
 ===
-Result: Chart is not complian
+Result: Chart is not compliant
 ```
 
 ## Install
