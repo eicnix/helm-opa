@@ -3,10 +3,29 @@
 
 This plugin enables you to check your rendered templates files again OPA policies to ensure that they match your policies.
 
-<a href="https://asciinema.org/a/179963" target="_blank"><img src="https://asciinema.org/a/179963.png" /></a>
+<a href="https://asciinema.org/a/180130" target="_blank"><img src="https://asciinema.org/a/180130.png" /></a>
 
+## Usage
+
+Define policies inside the `policies` folder in your Chart. e.g. Pods must run as nonRoot:
+```
+deny[msg] {
+  input.kind = "Deployment"
+  not input.spec.template.spec.securityContext.runAsNonRoot = true
+  msg = "Containers must not run as root"
+}
+```
+
+Run the policy check:
 ```sh
-helm opa CHART
+# helm opa CHART
+Processing file deployment.yaml
+Violations:
+- Containers must not run as root
+Processing file ingress.yaml
+Processing file service.yaml
+===
+Result: Chart is not complian
 ```
 
 ## Install
